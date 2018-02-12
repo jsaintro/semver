@@ -324,8 +324,9 @@ Authored by James Saint-Rossy
 Attribution
 -----------
 This is a derivative work based on:
-Derpmantic Versioning 2.0.0
+Semantic Versioning 2.0.0
 Authored by Tom Preston-Werner
+Original Source Code can be found at https://github.com/semver/semver
 
 License
 -------
