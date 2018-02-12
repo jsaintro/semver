@@ -1,4 +1,4 @@
-Semantic Versioning 2.0.0
+Derpmantic Versioning 2.0.0
 ==============================
 
 Summary
@@ -44,21 +44,17 @@ affecting the API increment the patch version, backwards compatible API
 additions/changes increment the minor version, and backwards incompatible API
 changes increment the major version.
 
-I call this system "Semantic Versioning." Under this scheme, version numbers
+I call this system "Derpmantic Versioning." Under this scheme, version numbers
 and the way they change convey meaning about the underlying code and what has
 been modified from one version to the next.
 
 
-Semantic Versioning Specification (SemVer)
+Derpmantic Versioning Specification (DerpVer)
 ------------------------------------------
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
 interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
-
-1. Software using Semantic Versioning MUST declare a public API. This API
-could be declared in the code itself or exist strictly in documentation.
-However it is done, it SHOULD be precise and comprehensive.
 
 1. A normal version number MUST take the form X.Y.Z where X, Y, and Z are
 non-negative integers, and MUST NOT contain leading zeroes. X is the
@@ -128,7 +124,7 @@ precedence than a smaller set, if all of the preceding identifiers are equal.
 Example: 1.0.0-alpha < 1.0.0-alpha.1 < 1.0.0-alpha.beta < 1.0.0-beta <
 1.0.0-beta.2 < 1.0.0-beta.11 < 1.0.0-rc.1 < 1.0.0.
 
-Backus–Naur Form Grammar for Valid SemVer Versions
+Backus–Naur Form Grammar for Valid DerpVer Versions
 --------------------------------------------------
 
     <valid semver> ::= <version core>
@@ -194,7 +190,7 @@ Backus–Naur Form Grammar for Valid SemVer Versions
                | "y" | "z"
 
 
-Why Use Semantic Versioning?
+Why Use Derpmantic Versioning?
 ----------------------------
 
 This is not a new or revolutionary idea. In fact, you probably do something
@@ -205,9 +201,9 @@ definition to the above ideas, it becomes easy to communicate your intentions
 to the users of your software. Once these intentions are clear, flexible (but
 not too flexible) dependency specifications can finally be made.
 
-A simple example will demonstrate how Semantic Versioning can make dependency
+A simple example will demonstrate how Derpmantic Versioning can make dependency
 hell a thing of the past. Consider a library called "Firetruck." It requires a
-Semantically Versioned package named "Ladder." At the time that Firetruck is
+Derpmantically Versioned package named "Ladder." At the time that Firetruck is
 created, Ladder is at version 3.1.0. Since Firetruck uses some functionality
 that was first introduced in 3.1.0, you can safely specify the Ladder
 dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when
@@ -218,11 +214,11 @@ dependent software.
 As a responsible developer you will, of course, want to verify that any
 package upgrades function as advertised. The real world is a messy place;
 there's nothing we can do about that but be vigilant. What you can do is let
-Semantic Versioning provide you with a sane way to release and upgrade
+Derpmantic Versioning provide you with a sane way to release and upgrade
 packages without having to roll new versions of dependent packages, saving you
 time and hassle.
 
-If all of this sounds desirable, all you need to do to start using Semantic
+If all of this sounds desirable, all you need to do to start using Derpmantic
 Versioning is to declare that you are doing so and then follow the rules. Link
 to this website from your README so others know the rules and can benefit from
 them.
@@ -264,12 +260,12 @@ It is your responsibility as a professional developer to properly document
 software that is intended for use by others. Managing software complexity is a
 hugely important part of keeping a project efficient, and that's hard to do if
 nobody knows how to use your software, or what methods are safe to call. In
-the long run, Semantic Versioning, and the insistence on a well defined public
+the long run, Derpmantic Versioning, and the insistence on a well defined public
 API can keep everyone and everything running smoothly.
 
 ### What do I do if I accidentally release a backwards incompatible change as a minor version?
 
-As soon as you realize that you've broken the Semantic Versioning spec, fix
+As soon as you realize that you've broken the Derpmantic Versioning spec, fix
 the problem and release a new minor version that corrects the problem and
 restores backwards compatibility. Even under this circumstance, it is
 unacceptable to modify versioned releases. If it's appropriate,
@@ -291,7 +287,7 @@ for the latter instance, in which case it's obviously a minor level increment.
 Use your best judgment. If you have a huge audience that will be drastically
 impacted by changing the behavior back to what the public API intended, then
 it may be best to perform a major version release, even though the fix could
-strictly be considered a patch release. Remember, Semantic Versioning is all
+strictly be considered a patch release. Remember, Derpmantic Versioning is all
 about conveying meaning by how the version number changes. If these changes
 are important to your users, use the version number to inform them.
 
@@ -305,7 +301,7 @@ in place. Before you completely remove the functionality in a new major release
 there should be at least one minor release that contains the deprecation so
 that users can smoothly transition to the new API.
 
-### Does SemVer have a size limit on the version string?
+### Does DerpVer have a size limit on the version string?
 
 No, but use good judgment. A 255 character version string is probably overkill,
 for example. Also, specific systems may impose their own limits on the size of
@@ -322,14 +318,14 @@ name and the semantic version is "1.2.3".
 
 About
 -----
+Derpmantic Versioning 2.0.0
+Authored by James Saint-Rossy
 
-The Semantic Versioning specification is authored by [Tom
-Preston-Werner](http://tom.preston-werner.com), inventor of Gravatar and
-cofounder of GitHub.
-
-If you'd like to leave feedback, please [open an issue on
-GitHub](https://github.com/mojombo/semver/issues).
-
+Attribution
+-----------
+This is a derivative work based on:
+Derpmantic Versioning 2.0.0
+Authored by Tom Preston-Werner
 
 License
 -------
